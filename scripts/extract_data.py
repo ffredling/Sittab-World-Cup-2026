@@ -27,6 +27,14 @@ BRACKETS = [
     "g54pejoi",
 ]
 
+# Picks completed outside defirate.com (raw snapshots stay untouched).
+# Martin left M103 (third-place game, his bracket: ESP vs ARG) empty on
+# defirate; he picked Spain by email to Filip on June 11, 2026
+# ("FW: World Cup Bracket Challenge").
+MANUAL_PICKS = {
+    "1MBgjZZv": {"M103": "ESP"},
+}
+
 # Scoring adopted from defirate.com's published rules (escalating per round),
 # i.e. the rules participants saw when filling out their brackets.
 SCORING = {
@@ -124,10 +132,20 @@ def main():
             for p in picks
             if p["pick_type"] == "match"
         }
+        ko_picks.update(MANUAL_PICKS.get(public_id, {}))
 
         champion = next(
             (code(p["picked_team_id"]) for p in picks if p["pick_type"] == "champion"),
             None,
+        )
+
+        ko_total = sum(1 for m in raw_t["matches"] if m["stage"] != "group")
+        complete = (
+            all(len(g) == 3 and all(g) for g in group_finish.values())
+            and len(group_finish) == 12
+            and len(thirds) == 8
+            and len(ko_picks) == ko_total
+            and champion is not None
         )
 
         brackets.append(
@@ -136,7 +154,7 @@ def main():
                 "name": name,
                 "sourceId": public_id,
                 "sourceUrl": f"https://defirate.com/bracket/?bracket={public_id}",
-                "complete": bool(raw_b["completeness"]["complete"]),
+                "complete": complete,
                 "groupFinish": dict(sorted(group_finish.items())),
                 "thirdsAdvancing": thirds,
                 "koPicks": ko_picks,

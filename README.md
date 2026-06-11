@@ -56,7 +56,7 @@ bracket under. Points escalate per round; maximum 360.
 | Final winner | 32 | 1 |
 
 A knockout pick scores only if the picked team wins that exact match. Missing
-picks (two brackets are slightly incomplete) score 0.
+picks (one bracket is slightly incomplete) score 0.
 
 ## Data
 

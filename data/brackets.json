@@ -572,7 +572,7 @@
   "name": "Martin's WC Bracket",
   "sourceId": "1MBgjZZv",
   "sourceUrl": "https://defirate.com/bracket/?bracket=1MBgjZZv",
-  "complete": false,
+  "complete": true,
   "groupFinish": {
    "A": [
     "MEX",
@@ -676,7 +676,8 @@
    "M96": "SUI",
    "M97": "GER",
    "M98": "ESP",
-   "M99": "BRA"
+   "M99": "BRA",
+   "M103": "ESP"
   },
   "champion": "GER"
  },
