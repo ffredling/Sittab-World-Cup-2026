@@ -58,7 +58,7 @@ page mean an `overrides` entry is needed (rare; README explains).
   `https://ffredling.github.io/Sittab-World-Cup-2026/`).
 - Tests double as data validation: every stored KO pick must sit inside that
   player's own predicted matchup (catches extraction or allocation bugs).
-- Repo branches: work happened on session branches (`claude/...`). Check
-  with the user / repo settings for the current default + Pages deploy
-  branch before assuming `main` exists; the Pages workflow lists its trigger
-  branches at the top.
+- `main` is the long-term branch (created June 11, 2026 from the build
+  session's branch, with the user's approval); the Pages workflow deploys
+  on pushes to it. Earlier `claude/...` branches are historical session
+  branches.

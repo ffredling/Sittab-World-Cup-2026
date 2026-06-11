@@ -84,6 +84,6 @@ constraints.
 
 ## Deployment
 
-Pushes to the deploy branch run `.github/workflows/pages.yml`, which tests
-and publishes the site to GitHub Pages at
+Pushes to `main` run `.github/workflows/pages.yml`, which tests and
+publishes the site to GitHub Pages at
 <https://ffredling.github.io/Sittab-World-Cup-2026/>.
