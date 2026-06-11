@@ -1,0 +1,797 @@
+[
+ {
+  "id": "fredling",
+  "name": "Fredling",
+  "sourceId": "moH0pW2A",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=moH0pW2A",
+  "complete": true,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "KOR",
+    "CZE"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "BIH"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "USA",
+    "TUR",
+    "PAR"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "JPN",
+    "SWE"
+   ],
+   "G": [
+    "BEL",
+    "IRN",
+    "EGY"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "NOR",
+    "SEN"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "POR",
+    "COL",
+    "COD"
+   ],
+   "L": [
+    "ENG",
+    "CRO",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "I",
+   "J"
+  ],
+  "koPicks": {
+   "M100": "ARG",
+   "M101": "ESP",
+   "M102": "ENG",
+   "M103": "FRA",
+   "M104": "ESP",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "CAN",
+   "M76": "NED",
+   "M77": "COL",
+   "M78": "ESP",
+   "M79": "USA",
+   "M80": "BEL",
+   "M81": "BRA",
+   "M82": "NOR",
+   "M83": "MEX",
+   "M84": "ENG",
+   "M85": "ARG",
+   "M86": "TUR",
+   "M87": "SUI",
+   "M88": "POR",
+   "M89": "FRA",
+   "M90": "NED",
+   "M91": "ESP",
+   "M92": "BEL",
+   "M93": "BRA",
+   "M94": "ENG",
+   "M95": "ARG",
+   "M96": "POR",
+   "M97": "FRA",
+   "M98": "ESP",
+   "M99": "ENG"
+  },
+  "champion": "ESP"
+ },
+ {
+  "id": "mannythemutty",
+  "name": "Mannythemutty",
+  "sourceId": "l4xeqJGi",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=l4xeqJGi",
+  "complete": true,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "CZE",
+    "KOR"
+   ],
+   "B": [
+    "CAN",
+    "SUI",
+    "BIH"
+   ],
+   "C": [
+    "BRA",
+    "SCO",
+    "MAR"
+   ],
+   "D": [
+    "PAR",
+    "USA",
+    "AUS"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "SWE",
+    "JPN"
+   ],
+   "G": [
+    "BEL",
+    "EGY",
+    "IRN"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "SEN",
+    "NOR"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "COL",
+    "POR",
+    "COD"
+   ],
+   "L": [
+    "CRO",
+    "ENG",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "D",
+   "E",
+   "F",
+   "H",
+   "I",
+   "J",
+   "L"
+  ],
+  "koPicks": {
+   "M100": "ARG",
+   "M101": "ESP",
+   "M102": "BRA",
+   "M103": "GER",
+   "M104": "BRA",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "SUI",
+   "M76": "NED",
+   "M77": "ENG",
+   "M78": "ESP",
+   "M79": "PAR",
+   "M80": "BEL",
+   "M81": "BRA",
+   "M82": "ECU",
+   "M83": "MEX",
+   "M84": "NOR",
+   "M85": "ARG",
+   "M86": "USA",
+   "M87": "CAN",
+   "M88": "COL",
+   "M89": "GER",
+   "M90": "SUI",
+   "M91": "ESP",
+   "M92": "BEL",
+   "M93": "BRA",
+   "M94": "MEX",
+   "M95": "ARG",
+   "M96": "COL",
+   "M97": "GER",
+   "M98": "ESP",
+   "M99": "BRA"
+  },
+  "champion": "BRA"
+ },
+ {
+  "id": "winicius-jr",
+  "name": "Winícius Jr.",
+  "sourceId": "C3iwCEcF",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=C3iwCEcF",
+  "complete": true,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "CZE",
+    "KOR"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "BIH"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "USA",
+    "TUR",
+    "PAR"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "JPN",
+    "SWE"
+   ],
+   "G": [
+    "BEL",
+    "EGY",
+    "IRN"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "NOR",
+    "SEN"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "POR",
+    "COL",
+    "COD"
+   ],
+   "L": [
+    "ENG",
+    "CRO",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "B",
+   "D",
+   "E",
+   "F",
+   "G",
+   "I",
+   "J"
+  ],
+  "koPicks": {
+   "M100": "POR",
+   "M101": "ESP",
+   "M102": "BRA",
+   "M103": "FRA",
+   "M104": "ESP",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "CZE",
+   "M76": "NED",
+   "M77": "COL",
+   "M78": "ESP",
+   "M79": "USA",
+   "M80": "BEL",
+   "M81": "BRA",
+   "M82": "NOR",
+   "M83": "MEX",
+   "M84": "ENG",
+   "M85": "ARG",
+   "M86": "TUR",
+   "M87": "SUI",
+   "M88": "POR",
+   "M89": "FRA",
+   "M90": "NED",
+   "M91": "ESP",
+   "M92": "BEL",
+   "M93": "BRA",
+   "M94": "ENG",
+   "M95": "ARG",
+   "M96": "POR",
+   "M97": "FRA",
+   "M98": "ESP",
+   "M99": "BRA"
+  },
+  "champion": "ESP"
+ },
+ {
+  "id": "king-johns-bracket",
+  "name": "King Johns Bracket",
+  "sourceId": "Dp9VNCLM",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=Dp9VNCLM",
+  "complete": false,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "CZE",
+    "KOR"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "BIH"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "USA",
+    "TUR",
+    "PAR"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "JPN",
+    "TUN"
+   ],
+   "G": [
+    "BEL",
+    "EGY",
+    "IRN"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "CPV"
+   ],
+   "I": [
+    "FRA",
+    "NOR",
+    "SEN"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "POR",
+    "COL",
+    "COD"
+   ],
+   "L": [
+    "ENG",
+    "CRO",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "F",
+   "G",
+   "J",
+   "L"
+  ],
+  "koPicks": {
+   "M100": "POR",
+   "M101": "FRA",
+   "M102": "POR",
+   "M104": "POR",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "CAN",
+   "M76": "NED",
+   "M77": "CRO",
+   "M78": "ESP",
+   "M79": "USA",
+   "M80": "BEL",
+   "M81": "JPN",
+   "M82": "NOR",
+   "M83": "MEX",
+   "M84": "ENG",
+   "M85": "ARG",
+   "M86": "TUR",
+   "M87": "SUI",
+   "M88": "POR",
+   "M89": "FRA",
+   "M91": "ESP",
+   "M92": "BEL",
+   "M93": "NOR",
+   "M94": "ENG",
+   "M95": "ARG",
+   "M96": "POR",
+   "M97": "FRA",
+   "M98": "ESP",
+   "M99": "ENG"
+  },
+  "champion": "POR"
+ },
+ {
+  "id": "tim",
+  "name": "Tim",
+  "sourceId": "BXCAWDw6",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=BXCAWDw6",
+  "complete": true,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "CZE",
+    "KOR"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "BIH"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "USA",
+    "TUR",
+    "AUS"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "SWE",
+    "JPN"
+   ],
+   "G": [
+    "BEL",
+    "EGY",
+    "IRN"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "NOR",
+    "SEN"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "POR",
+    "COL",
+    "COD"
+   ],
+   "L": [
+    "ENG",
+    "CRO",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "B",
+   "D",
+   "F",
+   "H",
+   "I",
+   "J",
+   "L"
+  ],
+  "koPicks": {
+   "M100": "URU",
+   "M101": "CZE",
+   "M102": "URU",
+   "M103": "MEX",
+   "M104": "CZE",
+   "M73": "GER",
+   "M74": "JPN",
+   "M75": "CZE",
+   "M76": "MAR",
+   "M77": "CRO",
+   "M78": "ESP",
+   "M79": "BIH",
+   "M80": "KOR",
+   "M81": "SWE",
+   "M82": "ECU",
+   "M83": "MEX",
+   "M84": "SEN",
+   "M85": "URU",
+   "M86": "TUR",
+   "M87": "ALG",
+   "M88": "GHA",
+   "M89": "JPN",
+   "M90": "CZE",
+   "M91": "ESP",
+   "M92": "BIH",
+   "M93": "SWE",
+   "M94": "MEX",
+   "M95": "URU",
+   "M96": "ALG",
+   "M97": "CZE",
+   "M98": "BIH",
+   "M99": "MEX"
+  },
+  "champion": "CZE"
+ },
+ {
+  "id": "martin-s-wc-bracket",
+  "name": "Martin's WC Bracket",
+  "sourceId": "1MBgjZZv",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=1MBgjZZv",
+  "complete": false,
+  "groupFinish": {
+   "A": [
+    "MEX",
+    "CZE",
+    "KOR"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "QAT"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "USA",
+    "TUR",
+    "PAR"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "JPN",
+    "SWE"
+   ],
+   "G": [
+    "BEL",
+    "IRN",
+    "EGY"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "NOR",
+    "SEN"
+   ],
+   "J": [
+    "ARG",
+    "AUT",
+    "ALG"
+   ],
+   "K": [
+    "POR",
+    "COL",
+    "COD"
+   ],
+   "L": [
+    "ENG",
+    "CRO",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "D",
+   "E",
+   "G",
+   "H",
+   "I",
+   "K",
+   "L"
+  ],
+  "koPicks": {
+   "M100": "ARG",
+   "M101": "GER",
+   "M102": "BRA",
+   "M104": "GER",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "CZE",
+   "M76": "MAR",
+   "M77": "CRO",
+   "M78": "ESP",
+   "M79": "USA",
+   "M80": "BEL",
+   "M81": "BRA",
+   "M82": "NOR",
+   "M83": "MEX",
+   "M84": "ENG",
+   "M85": "ARG",
+   "M86": "TUR",
+   "M87": "SUI",
+   "M88": "POR",
+   "M89": "GER",
+   "M90": "MAR",
+   "M91": "ESP",
+   "M92": "USA",
+   "M93": "BRA",
+   "M94": "ENG",
+   "M95": "ARG",
+   "M96": "SUI",
+   "M97": "GER",
+   "M98": "ESP",
+   "M99": "BRA"
+  },
+  "champion": "GER"
+ },
+ {
+  "id": "riley",
+  "name": "Riley",
+  "sourceId": "g54pejoi",
+  "sourceUrl": "https://defirate.com/bracket/?bracket=g54pejoi",
+  "complete": true,
+  "groupFinish": {
+   "A": [
+    "KOR",
+    "MEX",
+    "CZE"
+   ],
+   "B": [
+    "SUI",
+    "CAN",
+    "QAT"
+   ],
+   "C": [
+    "BRA",
+    "MAR",
+    "SCO"
+   ],
+   "D": [
+    "TUR",
+    "USA",
+    "AUS"
+   ],
+   "E": [
+    "GER",
+    "ECU",
+    "CIV"
+   ],
+   "F": [
+    "NED",
+    "JPN",
+    "SWE"
+   ],
+   "G": [
+    "BEL",
+    "IRN",
+    "EGY"
+   ],
+   "H": [
+    "ESP",
+    "URU",
+    "KSA"
+   ],
+   "I": [
+    "FRA",
+    "SEN",
+    "NOR"
+   ],
+   "J": [
+    "ARG",
+    "ALG",
+    "AUT"
+   ],
+   "K": [
+    "COL",
+    "POR",
+    "UZB"
+   ],
+   "L": [
+    "CRO",
+    "ENG",
+    "GHA"
+   ]
+  },
+  "thirdsAdvancing": [
+   "A",
+   "C",
+   "D",
+   "E",
+   "G",
+   "I",
+   "J",
+   "L"
+  ],
+  "koPicks": {
+   "M100": "COL",
+   "M101": "FRA",
+   "M102": "COL",
+   "M103": "ESP",
+   "M104": "FRA",
+   "M73": "GER",
+   "M74": "FRA",
+   "M75": "MEX",
+   "M76": "NED",
+   "M77": "POR",
+   "M78": "ESP",
+   "M79": "TUR",
+   "M80": "BEL",
+   "M81": "BRA",
+   "M82": "ECU",
+   "M83": "KOR",
+   "M84": "CRO",
+   "M85": "ARG",
+   "M86": "USA",
+   "M87": "SUI",
+   "M88": "COL",
+   "M89": "FRA",
+   "M90": "NED",
+   "M91": "ESP",
+   "M92": "BEL",
+   "M93": "BRA",
+   "M94": "KOR",
+   "M95": "ARG",
+   "M96": "COL",
+   "M97": "FRA",
+   "M98": "ESP",
+   "M99": "BRA"
+  },
+  "champion": "FRA"
+ }
+]

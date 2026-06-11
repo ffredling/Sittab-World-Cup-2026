@@ -1,0 +1,8 @@
+{
+  "name": "sittab-world-cup-2026",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test_engine.mjs"
+  }
+}
