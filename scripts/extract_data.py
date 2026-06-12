@@ -28,11 +28,14 @@ BRACKETS = [
 ]
 
 # Picks completed outside defirate.com (raw snapshots stay untouched).
-# Martin left M103 (third-place game, his bracket: ESP vs ARG) empty on
-# defirate; he picked Spain by email to Filip on June 11, 2026
-# ("FW: World Cup Bracket Challenge").
+# Both answered Filip's "FW: World Cup Bracket Challenge" email asking for
+# their missing third-place-game pick:
+# - Martin (his M103: ESP vs ARG) picked Spain, June 11, 2026.
+# - King John / John Repfennig (his M103: ESP vs ENG) picked Spain,
+#   June 2026. His M90 pick (CAN vs NED) is still missing.
 MANUAL_PICKS = {
     "1MBgjZZv": {"M103": "ESP"},
+    "Dp9VNCLM": {"M103": "ESP"},
 }
 
 # Scoring adopted from defirate.com's published rules (escalating per round),

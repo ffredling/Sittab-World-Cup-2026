@@ -449,7 +449,8 @@
    "M96": "POR",
    "M97": "FRA",
    "M98": "ESP",
-   "M99": "ENG"
+   "M99": "ENG",
+   "M103": "ESP"
   },
   "champion": "POR"
  },

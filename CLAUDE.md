@@ -51,11 +51,11 @@ with `overrides.lockedMatches`. Tie warnings on the Tournament page mean an
   `scripts/extract_data.py`); raw responses live in `data/raw/`. Picks
   locked at noon June 11, so the snapshot is final — never refetch over the
   user's results.
-- King John's bracket is slightly incomplete on defirate (missing M90 + M103
-  picks); missing picks simply score 0 — by design. Martin's originally
-  missing M103 pick was answered by email (Spain) and is applied via
-  `MANUAL_PICKS` in `scripts/extract_data.py`; use the same mechanism if
-  King John ever supplies his.
+- King John's bracket is missing one pick (M90, his bracket: CAN vs NED);
+  missing picks simply score 0 — by design. Martin's and King John's
+  originally missing M103 picks were both answered by email (both Spain)
+  and are applied via `MANUAL_PICKS` in `scripts/extract_data.py`; use the
+  same mechanism if King John ever supplies M90.
 - `data/raw/wcb_config.json` carries FIFA's official 495-row third-place
   allocation table (winner_order + table); `js/engine.js` uses it to pair
   best thirds with group winners in the R32. The engine test validates every
