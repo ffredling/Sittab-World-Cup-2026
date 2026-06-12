@@ -546,10 +546,10 @@ th.num {
 .bracket {
   display: grid;
   grid-template-columns:
-    repeat(4, minmax(120px, 1fr)) minmax(172px, 1fr)
-    repeat(4, minmax(120px, 1fr));
-  gap: 10px;
-  min-width: 1240px;
+    repeat(4, minmax(112px, 1fr)) minmax(160px, 1fr)
+    repeat(4, minmax(112px, 1fr));
+  gap: 8px;
+  min-width: 1140px;
   height: 740px;
   align-items: stretch;
 }
