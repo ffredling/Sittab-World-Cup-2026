@@ -3,7 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - claude/zealous-knuth-ykajm5
       - main
   workflow_dispatch:
 
