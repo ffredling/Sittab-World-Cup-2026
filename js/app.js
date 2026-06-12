@@ -1,5 +1,5 @@
 // Shared page helpers: data loading, navigation and small render utilities.
-import { teamMap } from "./engine.js";
+import { teamMap, STAGE_LABELS } from "./engine.js";
 
 export async function loadData() {
   const bust = `?v=${Date.now()}`;
@@ -72,5 +72,37 @@ export function resultsCount(tournament, results) {
 
 export function statusLine(tournament, results) {
   const { entered, total } = resultsCount(tournament, results);
-  return `${entered} of ${total} matches entered`;
+  return `${entered} of ${total} matches played`;
+}
+
+// All played matches as compact score cards, newest first (match codes
+// follow the official schedule order). `actual` resolves knockout slots
+// and winners.
+export function renderPlayedMatches(tournament, results, teams, actual) {
+  const played = tournament.matches
+    .filter((m) => results.matches[m.code] && results.matches[m.code].score)
+    .sort((a, b) => Number(b.code.slice(1)) - Number(a.code.slice(1)));
+  if (!played.length) {
+    return `<p class="note">No matches played yet.</p>`;
+  }
+  const stageLabel = (m) =>
+    m.stage === "group" ? `Group ${m.group}` : STAGE_LABELS[m.stage];
+  return `<div class="played-grid">${played
+    .map((m) => {
+      const r = results.matches[m.code];
+      const home = m.stage === "group" ? m.home : (actual.slotTeams[m.code] || {}).home;
+      const away = m.stage === "group" ? m.away : (actual.slotTeams[m.code] || {}).away;
+      const winner = actual.winners[m.code];
+      const pens = r.pens
+        ? `<span class="pens">${r.pens[0]}–${r.pens[1]} pens</span>`
+        : "";
+      const row = (team, sc) =>
+        `<div class="prow${winner && team === winner ? " win" : ""}">${chip(teams, team)}<span class="psc">${sc}</span></div>`;
+      return `<div class="played-card">
+        <div class="pstage">${stageLabel(m)} ${pens}</div>
+        ${row(home, r.score[0])}
+        ${row(away, r.score[1])}
+      </div>`;
+    })
+    .join("")}</div>`;
 }

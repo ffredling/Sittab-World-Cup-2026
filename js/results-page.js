@@ -1,4 +1,4 @@
-import { loadData, renderNav, chip, statusLine } from "./app.js";
+import { loadData, renderNav, chip, statusLine, renderPlayedMatches } from "./app.js";
 import { computeActual } from "./engine.js";
 import { renderKoBracket } from "./bracket-render.js";
 
@@ -8,8 +8,14 @@ renderNav("results", brackets);
 const actual = computeActual(tournament, results);
 
 document.getElementById("status").textContent =
-  `${statusLine(tournament, results)} · group tables, third-place ranking and ` +
-  `bracket fill in automatically from match results`;
+  `${statusLine(tournament, results)} · results sync automatically every ~30 minutes`;
+
+document.getElementById("played").innerHTML = renderPlayedMatches(
+  tournament,
+  results,
+  teams,
+  actual
+);
 
 // ---- warnings ----
 const warnings = [];

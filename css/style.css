@@ -316,6 +316,55 @@ th.num {
   opacity: 0.6;
 }
 
+/* ---------------- played matches ---------------- */
+.played-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+}
+
+.played-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.played-card .pstage {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 5px;
+}
+
+.played-card .pens {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--accent2);
+}
+
+.played-card .prow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+  font-size: 14px;
+}
+
+.played-card .psc {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.played-card .prow.win,
+.played-card .prow.win .psc {
+  color: var(--text);
+  font-weight: 800;
+}
+
 /* ---------------- knockout bracket ---------------- */
 .bracket-scroll {
   overflow-x: auto;

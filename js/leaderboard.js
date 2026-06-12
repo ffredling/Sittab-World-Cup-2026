@@ -14,7 +14,8 @@ const order = [...brackets].sort(
 );
 
 document.getElementById("status").textContent =
-  `${statusLine(tournament, results)} · update data/results.json to refresh`;
+  `${statusLine(tournament, results)} · results sync automatically every ~30 minutes` +
+  ` · scores appear on the Tournament page`;
 
 const cols = [
   ["groupAdvance", "Groups"],
