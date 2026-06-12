@@ -2,7 +2,8 @@ name: Sync results from defirate
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Off-peak minutes: GitHub often skips scheduled runs at :00/:30.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
