@@ -11,21 +11,17 @@ export async function loadData() {
   return { tournament, brackets, results, teams: teamMap(tournament) };
 }
 
-export function renderNav(active, brackets) {
+export function renderNav(active) {
   const nav = document.getElementById("nav");
   const links = [
     { href: "index.html", label: "Leaderboard", id: "leaderboard" },
     { href: "results.html", label: "Tournament", id: "results" },
+    { href: "matches.html", label: "Matches", id: "matches" },
+    { href: "rules.html", label: "Rules", id: "rules" },
   ];
-  const bracketLinks = brackets
-    .map(
-      (b) =>
-        `<a class="nav-bracket${active === b.id ? " active" : ""}" href="bracket.html?id=${b.id}">${esc(b.name)}</a>`
-    )
-    .join("");
   nav.innerHTML = `
     <div class="nav-inner">
-      <a class="brand" href="index.html">⚽ Sittab World Cup 2026</a>
+      <a class="brand" href="index.html"><span class="ball">⚽</span> Sittab World Cup 2026</a>
       <div class="nav-links">
         ${links
           .map(
@@ -34,7 +30,6 @@ export function renderNav(active, brackets) {
           )
           .join("")}
       </div>
-      <div class="nav-brackets">${bracketLinks}</div>
     </div>`;
 }
 

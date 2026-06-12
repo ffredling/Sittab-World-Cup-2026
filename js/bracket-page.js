@@ -6,7 +6,18 @@ const { tournament, brackets, results, teams } = await loadData();
 
 const id = new URLSearchParams(location.search).get("id") || brackets[0].id;
 const bracket = brackets.find((b) => b.id === id) || brackets[0];
-renderNav(bracket.id, brackets);
+renderNav(null);
+
+const switcher = document.getElementById("player-switch");
+switcher.innerHTML = brackets
+  .map(
+    (b) =>
+      `<option value="${b.id}"${b.id === bracket.id ? " selected" : ""}>${esc(b.name)}</option>`
+  )
+  .join("");
+switcher.addEventListener("change", () => {
+  location.href = `bracket.html?id=${switcher.value}`;
+});
 
 const { scores } = scoreAll(tournament, brackets, results);
 const score = scores[bracket.id];
@@ -21,7 +32,6 @@ const order = [...brackets].sort(
 const rank = order.findIndex((b) => b.id === bracket.id) + 1;
 
 document.title = `${bracket.name} · Sittab World Cup 2026`;
-document.getElementById("pname").textContent = bracket.name;
 document.getElementById("ppoints").innerHTML =
   `${score.total} <small>points</small>`;
 document.getElementById("prank").innerHTML = `#${rank} <small>of ${brackets.length}</small>`;
