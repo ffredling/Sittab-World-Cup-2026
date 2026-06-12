@@ -13,11 +13,17 @@ via GitHub Pages. No backend, no build step — plain HTML/CSS/JS.
 - **`results.html`** — the actual tournament: group tables, third-place
   ranking and the knockout bracket, all computed from entered match results.
 
-## Updating results (the only recurring task)
+## Results update automatically
 
-Edit [`data/results.json`](data/results.json) and commit. Add one entry per
-finished match under `"matches"`, keyed by match code (`M1`–`M104`, see
-`data/tournament.json` for the schedule):
+A scheduled workflow ([`sync-results.yml`](.github/workflows/sync-results.yml),
+every 30 minutes during the tournament) pulls finished matches from
+defirate.com's tournament feed — the same source the brackets came from —
+into [`data/results.json`](data/results.json) via
+`scripts/sync_results.py`, validates the data with the engine tests, commits,
+and redeploys the site. No hands needed.
+
+Manual edits still work (e.g. to correct the feed): entries live under
+`"matches"`, keyed by match code (`M1`–`M104`, see `data/tournament.json`):
 
 ```jsonc
 {
@@ -25,9 +31,12 @@ finished match under `"matches"`, keyed by match code (`M1`–`M104`, see
     "M1":  { "score": [2, 1] },                  // group match: MEX 2-1 RSA
     "M73": { "score": [1, 1], "pens": [4, 2] }   // knockout decided on penalties
   },
-  "overrides": { "groupOrder": {} }
+  "overrides": { "groupOrder": {}, "lockedMatches": ["M73"] }
 }
 ```
+
+Add a match code to `overrides.lockedMatches` to stop the sync from
+overwriting your manual entry for it.
 
 Everything else is computed automatically: group tables (points → goal
 difference → goals scored → head-to-head), the best-thirds ranking, the

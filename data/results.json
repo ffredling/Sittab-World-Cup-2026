@@ -1,6 +1,19 @@
 {
  "_howto": "Add finished matches under 'matches' keyed by match code (M1..M104, see data/tournament.json). Group match: {\"score\": [home, away]}. Knockout match drawn after 90/120 min: add \"pens\": [home, away]. The site computes group tables, third-place ranking, bracket progression and all points. Use 'overrides.groupOrder' only if FIFA tiebreakers beyond points/GD/GF/head-to-head decide a group order, e.g. {\"A\": [\"MEX\", \"KOR\", \"RSA\", \"CZE\"]}.",
- "matches": {},
+ "matches": {
+  "M1": {
+   "score": [
+    2,
+    0
+   ]
+  },
+  "M2": {
+   "score": [
+    2,
+    1
+   ]
+  }
+ },
  "overrides": {
   "groupOrder": {}
  }

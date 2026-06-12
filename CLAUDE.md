@@ -19,13 +19,16 @@ how-to; this file holds context the README doesn't.
 - GitHub Pages deploys via `.github/workflows/pages.yml` (tests, then
   publishes) on push to the deploy branch.
 
-## The recurring task: entering results
+## Results: automatic since June 12, 2026
 
-The user tells you scores (or edits `data/results.json` directly). Add
-entries like `"M5": {"score": [2, 0]}` (knockouts may need
-`"pens": [a, b]`), commit, push — the site recomputes everything client-side.
-Match codes/schedule: `data/tournament.json`. Tie warnings on the Tournament
-page mean an `overrides` entry is needed (rare; README explains).
+`.github/workflows/sync-results.yml` runs `scripts/sync_results.py` every 30
+minutes: it pulls `final` matches from defirate's tournament endpoint into
+`data/results.json`, validates with the engine tests, pushes, and dispatches
+the Pages deploy (the explicit dispatch exists because GITHUB_TOKEN pushes
+don't trigger other workflows). It stops itself after July 25, 2026.
+Manual edits to `data/results.json` still work; protect one from the sync
+with `overrides.lockedMatches`. Tie warnings on the Tournament page mean an
+`overrides` entry is needed (rare; README explains).
 
 ## Decisions (made with user — do not re-ask)
 
@@ -35,8 +38,10 @@ page mean an `overrides` entry is needed (rare; README explains).
    top-2 is order-agnostic; a 3rd-place pick must finish exactly 3rd and
    advance; KO pick scores only if the team wins that exact match.
 2. **Hosting**: GitHub Pages from this repo.
-3. **Results**: manual via `data/results.json`. No live API — explicitly
-   declined.
+3. **Results**: automatic sync from defirate's tournament feed (user
+   requested automation June 12, 2026, superseding the earlier manual-only
+   decision). `data/results.json` remains the source of truth the site
+   reads; manual edits remain possible.
 4. **Language**: English.
 
 ## Things future sessions should know
