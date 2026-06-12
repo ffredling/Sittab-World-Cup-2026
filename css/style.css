@@ -22,6 +22,9 @@
   --row-line-soft: #F4F4F4;
   --surface-alt: #FAFAFA;
   --canvas: #FCFCFC;
+  --green: #1A7A3A;
+  --green-tint: #A9CDB4;
+  --red-cell-tint: #DFB3B2;
   --serif: "Zilla Slab", "Rockwell", Georgia, serif;
   --sans: "Source Sans 3", "Source Sans Pro", Calibri, Arial, sans-serif;
 }
@@ -442,15 +445,15 @@ th.num {
   font-size: 11px;
 }
 
-/* pick status (grayscale; red stays reserved for the brand) */
+/* pick status: green = correct, Sittab red = wrong, gray = no longer possible */
 .s-correct,
 .s-correct .chip {
-  color: var(--ink);
+  color: var(--green);
   font-weight: 700;
 }
 
 .s-wrong {
-  color: var(--gray-label);
+  color: var(--red);
 }
 
 .s-wrong .chip span:last-child,
@@ -650,12 +653,20 @@ th.num {
   border-top-color: var(--red-tint);
 }
 
+.match.m-correct {
+  border-color: var(--green-tint);
+}
+
 .match.m-correct .verdict {
-  color: var(--ink);
+  color: var(--green);
+}
+
+.match.m-wrong {
+  border-color: var(--red-cell-tint);
 }
 
 .match.m-wrong .verdict {
-  color: var(--gray-label);
+  color: var(--red);
 }
 
 .match.m-dead {
