@@ -346,7 +346,7 @@
   "name": "King Johns Bracket",
   "sourceId": "Dp9VNCLM",
   "sourceUrl": "https://defirate.com/bracket/?bracket=Dp9VNCLM",
-  "complete": false,
+  "complete": true,
   "groupFinish": {
    "A": [
     "MEX",
@@ -450,7 +450,8 @@
    "M97": "FRA",
    "M98": "ESP",
    "M99": "ENG",
-   "M103": "ESP"
+   "M103": "ESP",
+   "M90": "NED"
   },
   "champion": "POR"
  },

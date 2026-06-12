@@ -175,12 +175,11 @@ const perfect = perfectResultsFor(fredling);
   for (const b of brackets) {
     const s = scores[b.id];
     check(`${b.id} zero points before results`, s.total === 0);
-    // King John is still missing his M90 (R16) pick; both missing M103 picks
-    // were filled in manually (see MANUAL_PICKS in extract_data.py).
-    const expectedPotential = b.id === "king-johns-bracket" ? 360 - 8 : 360;
+    // All 7 brackets are complete (MANUAL_PICKS fills the defirate gaps).
+    check(`${b.id} complete`, b.complete);
     check(
-      `${b.id} potential is ${expectedPotential}`,
-      s.potential === expectedPotential,
+      `${b.id} potential is 360`,
+      s.potential === 360,
       `got ${s.potential}`
     );
   }

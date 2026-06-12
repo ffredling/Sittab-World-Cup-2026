@@ -64,8 +64,7 @@ bracket under. Points escalate per round; maximum 360.
 | Third-place game winner | 16 | 1 |
 | Final winner | 32 | 1 |
 
-A knockout pick scores only if the picked team wins that exact match. Missing
-picks (one bracket is slightly incomplete) score 0.
+A knockout pick scores only if the picked team wins that exact match.
 
 ## Data
 
