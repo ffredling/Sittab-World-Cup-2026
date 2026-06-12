@@ -72,7 +72,7 @@ document.getElementById("ko").innerHTML = renderKoBracket(
       verdict,
     };
   },
-  `<div class="champ-box"><div class="lbl">Predicted champion</div>${chip(teams, bracket.champion)}</div>`
+  `<div class="champ-box"><div class="lbl">Predicted Champion</div>${chip(teams, bracket.champion)}</div>`
 );
 
 // ---- advancing thirds ----

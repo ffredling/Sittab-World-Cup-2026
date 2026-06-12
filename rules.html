@@ -5,35 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rules · Sittab World Cup 2026</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+<link rel="icon" href="assets/sittab_logo.png">
 </head>
 <body>
 <header id="nav"></header>
 <main>
-  <h1>Scoring rules</h1>
-  <p class="sub">Points escalate round by round — the same rules the brackets were
-  filled out under on defirate.com. Maximum possible: <strong>360 points</strong>.</p>
-  <div class="scoring-grid" id="scoring"></div>
-  <ul class="note rules-list">
-    <li><strong>Group stage:</strong> 2 points for each team you correctly placed in
-      the top two of its group (your 1st/2nd order doesn't matter).</li>
-    <li><strong>Best thirds:</strong> 3 points for each picked third-place team that
-      really finishes 3rd in its group <em>and</em> advances among the 8 best thirds.</li>
-    <li><strong>Knockouts:</strong> you score a match when the team you picked wins
-      that exact match — if your team isn't even in it, the pick is simply wrong.</li>
-    <li><strong>Possible</strong> (on the leaderboard) shows each player's
-      ceiling if everything else breaks their way from here.</li>
-  </ul>
+  <h1>Rules</h1>
+  <p class="sub">How points are scored — 360 on the line.</p>
 
-  <h2>How this site works</h2>
-  <ul class="note rules-list">
-    <li>All 7 brackets were locked on defirate.com at noon on June 11, 2026 —
-      what you see here is everyone's final picks.</li>
-    <li>Results sync automatically from the tournament feed about every
-      30 minutes; group tables, the best-thirds ranking and the knockout
-      bracket all fill in by themselves.</li>
-    <li>Group tiebreakers: points, then goal difference, then goals scored,
-      then head-to-head among the tied teams.</li>
+  <p class="rules-intro">We score every bracket the same way: predict each stage
+  of the tournament and earn points as the real results come in. The deeper your
+  call holds up, the more it is worth.</p>
+
+  <div class="card rules-card">
+    <table id="rules-table"></table>
+  </div>
+
+  <ul class="rules-notes">
+    <li>Results sync automatically every ~30 minutes — no need to refresh.</li>
+    <li>Group standings and the best third-placed teams settle once every group
+      has played.</li>
+    <li>Group stage: 2 points for each team you correctly placed in the top two
+      of its group — your 1st/2nd order doesn't matter.</li>
+    <li>Best thirds: 3 points for each picked third-place team that really
+      finishes 3rd in its group and advances among the 8 best.</li>
+    <li>Knockouts: you score a match when the team you picked wins that exact
+      match — Round of 32 is 4 points, then 8, 16, 24 per round, 16 for the
+      bronze final and 32 for the final.</li>
+    <li>Players tied on total points share the same rank.</li>
   </ul>
 </main>
 <script type="module" src="js/rules-page.js"></script>

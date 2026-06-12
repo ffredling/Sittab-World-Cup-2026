@@ -47,10 +47,10 @@ document.getElementById("ko").innerHTML = renderKoBracket(
       winner: actual.winners[code] || null,
     };
   },
-  `<div class="champ-box"><div class="lbl">World champion</div>${
+  `<div class="champ-box"><div class="lbl">World Champion</div>${
     actual.champion
       ? chip(teams, actual.champion)
-      : '<span class="chip tbd">TBD</span>'
+      : '<div class="champ-tbd">TBD</div>'
   }</div>`
 );
 
@@ -61,20 +61,21 @@ document.getElementById("thirds-note").textContent = actual.advancingThirds
     ? "Provisional — only finished groups are ranked; top 8 advance once all groups are done."
     : "Appears once the first group finishes.";
 
-document.getElementById("thirds").innerHTML = actual.thirdRows.length
-  ? `<thead><tr><th></th><th>Team</th><th>Grp</th>
+document.getElementById("thirds-wrap").innerHTML = actual.thirdRows.length
+  ? `<div class="card table-card" style="max-width:560px"><table class="thirds-table">
+     <thead><tr><th></th><th>Team</th><th>Grp</th>
      <th class="num">Pts</th><th class="num">GD</th><th class="num">GF</th></tr></thead>
    <tbody>${actual.thirdRows
      .map(
        (r, i) => `<tr class="${i === 7 && actual.advancingThirds ? "cutoff" : ""}">
-        <td class="num" style="color:var(--muted)">${i + 1}</td>
+        <td class="num" style="color:var(--gray-40)">${i + 1}</td>
         <td>${chip(teams, r.code)}</td><td>${r.group}</td>
         <td class="num">${r.Pts}</td><td class="num">${r.GD > 0 ? "+" : ""}${r.GD}</td>
         <td class="num">${r.GF}</td>
       </tr>`
      )
-     .join("")}</tbody>`
-  : `<tbody><tr><td class="note" style="padding:14px">No groups finished yet.</td></tr></tbody>`;
+     .join("")}</tbody></table></div>`
+  : `<div class="empty-card">No groups finished yet.</div>`;
 
 // ---- groups ----
 const matchesByGroup = {};

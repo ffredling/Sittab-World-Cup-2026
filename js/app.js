@@ -21,7 +21,11 @@ export function renderNav(active) {
   ];
   nav.innerHTML = `
     <div class="nav-inner">
-      <a class="brand" href="index.html"><span class="ball">⚽</span> Sittab World Cup 2026</a>
+      <a class="brand" href="index.html">
+        <img src="assets/sittab_logo.png" alt="Sittab">
+        <span class="divider"></span>
+        <span class="wordmark">World Cup 2026</span>
+      </a>
       <div class="nav-links">
         ${links
           .map(
@@ -31,6 +35,11 @@ export function renderNav(active) {
           .join("")}
       </div>
     </div>`;
+  if (!document.querySelector(".bottom-rule")) {
+    const rule = document.createElement("div");
+    rule.className = "bottom-rule";
+    document.body.appendChild(rule);
+  }
 }
 
 export function esc(s) {
@@ -41,9 +50,9 @@ export function esc(s) {
   );
 }
 
-export function flag(team, size = 20) {
+export function flag(team) {
   if (!team) return "";
-  return `<img class="flag" src="${team.flag}" width="${size}" alt="" loading="lazy">`;
+  return `<img class="flag" src="${team.flag}" alt="" loading="lazy">`;
 }
 
 // Compact team chip: flag + code, full name as tooltip.
@@ -92,7 +101,7 @@ export function renderPlayedMatches(tournament, results, teams, actual) {
         ? `<span class="pens">${r.pens[0]}–${r.pens[1]} pens</span>`
         : "";
       const row = (team, sc) =>
-        `<div class="prow${winner && team === winner ? " win" : ""}">${chip(teams, team)}<span class="psc">${sc}</span></div>`;
+        `<div class="prow${winner ? (team === winner ? " win" : "") : " draw"}">${chip(teams, team)}<span class="psc">${sc}</span></div>`;
       return `<div class="played-card">
         <div class="pstage">${stageLabel(m)} ${pens}</div>
         ${row(home, r.score[0])}

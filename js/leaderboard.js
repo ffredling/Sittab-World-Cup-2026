@@ -36,9 +36,12 @@ const rows = order.map((b, i) => {
     lastTotal = s.total;
   }
   const breakdownCells = cols
-    .map(([k]) => `<td class="num bd">${s.breakdown[k] || "·"}</td>`)
+    .map(
+      ([k]) =>
+        `<td class="bd">${s.breakdown[k] || '<span class="dot0">·</span>'}</td>`
+    )
     .join("");
-  return `<tr class="${rank === 1 ? "first" : ""}">
+  return `<tr>
     <td class="pos">${rank}</td>
     <td class="name"><a href="bracket.html?id=${b.id}">${esc(b.name)}</a></td>
     <td class="champ">${chip(teams, b.champion)}</td>
@@ -50,8 +53,8 @@ const rows = order.map((b, i) => {
 
 document.getElementById("lb").innerHTML = `
   <thead><tr>
-    <th></th><th>Name</th><th class="champ">Champion</th>
-    ${cols.map(([, l]) => `<th class="num bd">${l}</th>`).join("")}
+    <th class="pos"></th><th>Name</th><th class="champ">Champion</th>
+    ${cols.map(([, l]) => `<th class="bd">${l}</th>`).join("")}
     <th class="num">Total</th><th class="num">Possible</th>
   </tr></thead>
   <tbody>${rows.join("")}</tbody>`;

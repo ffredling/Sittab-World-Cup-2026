@@ -61,7 +61,13 @@ with `overrides.lockedMatches`. Tie warnings on the Tournament page mean an
   best thirds with group winners in the R32. The engine test validates every
   row against the R32 slot constraints.
 - Flags are vendored in `assets/flags/` (from flagcdn.com) so the site has
-  zero external dependencies.
+  zero external dependencies. Fonts (Zilla Slab, Source Sans 3) are vendored
+  too (`assets/fonts/`).
+- The visual design follows a Sittab-brand handoff the user supplied June 12,
+  2026 (light ground, Sittab red `#B51F1E` as the *only* accent — active tab,
+  Final cell, champion plate, bottom rule — otherwise grayscale; Zilla Slab
+  headings; 4px corners; no shadows/gradients/emoji). Keep new UI within
+  those constraints.
 - The site uses only relative URLs (GitHub Pages subpath:
   `https://ffredling.github.io/Sittab-World-Cup-2026/`).
 - Tests double as data validation: every stored KO pick must sit inside that
