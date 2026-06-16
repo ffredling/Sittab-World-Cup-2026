@@ -16,11 +16,12 @@ via GitHub Pages. No backend, no build step — plain HTML/CSS/JS.
 ## Results update automatically
 
 A scheduled workflow ([`sync-results.yml`](.github/workflows/sync-results.yml),
-every 30 minutes during the tournament) pulls finished matches from
-defirate.com's tournament feed — the same source the brackets came from —
-into [`data/results.json`](data/results.json) via
-`scripts/sync_results.py`, validates the data with the engine tests, commits,
-and redeploys the site. No hands needed.
+every 30 minutes during the tournament) pulls finished matches from ESPN's
+public Soccer API into [`data/results.json`](data/results.json) via
+`scripts/sync_results.mjs`, validates the data with the engine tests, commits,
+and redeploys the site. No hands needed. (The brackets themselves were built
+from defirate.com, but defirate lagged ~a day entering results, so the live
+results come from ESPN — the same tournament, updated in real time.)
 
 Manual edits still work (e.g. to correct the feed): entries live under
 `"matches"`, keyed by match code (`M1`–`M104`, see `data/tournament.json`):
