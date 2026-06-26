@@ -1,353 +1,411 @@
 {
- "_howto": "Add finished matches under 'matches' keyed by match code (M1..M104, see data/tournament.json). Group match: {\"score\": [home, away]}. Knockout match drawn after 90/120 min: add \"pens\": [home, away]. The site computes group tables, third-place ranking, bracket progression and all points. Use 'overrides.groupOrder' only if FIFA tiebreakers beyond points/GD/GF/head-to-head decide a group order, e.g. {\"A\": [\"MEX\", \"KOR\", \"RSA\", \"CZE\"]}.",
+ "_howto": "Add finished matches under 'matches' keyed by match code (M1..M104, see data/tournament.json). Group match: {\"score\": [home, away]}. Knockout match drawn after 90/120 min: add \"pens\": [home, away]. The site computes group tables, third-place ranking, bracket progression and all points. Use 'overrides.groupOrder' only if FIFA tiebreakers beyond points/GD/GF/head-to-head decide a group order, e.g. {\"A\": [\"MEX\", \"KOR\", \"RSA\", \"CZE\"]}. An optional ISO \"date\" (kickoff time) may accompany an entry; the sync fills it from ESPN and the Matches page orders by it (newest first).",
  "matches": {
   "M1": {
    "score": [
     2,
     0
-   ]
+   ],
+   "date": "2026-06-11T19:00Z"
   },
   "M2": {
    "score": [
     2,
     1
-   ]
+   ],
+   "date": "2026-06-12T02:00Z"
   },
   "M3": {
    "score": [
     1,
     0
-   ]
+   ],
+   "date": "2026-06-19T01:00Z"
   },
   "M4": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-18T16:00Z"
   },
   "M5": {
    "score": [
     0,
     3
-   ]
+   ],
+   "date": "2026-06-25T01:00Z"
   },
   "M6": {
    "score": [
     1,
     0
-   ]
+   ],
+   "date": "2026-06-25T01:00Z"
   },
   "M7": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-12T19:00Z"
   },
   "M8": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-13T19:00Z"
   },
   "M9": {
    "score": [
     6,
     0
-   ]
+   ],
+   "date": "2026-06-18T22:00Z"
   },
   "M10": {
    "score": [
     4,
     1
-   ]
+   ],
+   "date": "2026-06-18T19:00Z"
   },
   "M11": {
    "score": [
     2,
     1
-   ]
+   ],
+   "date": "2026-06-24T19:00Z"
   },
   "M12": {
    "score": [
     3,
     1
-   ]
+   ],
+   "date": "2026-06-24T19:00Z"
   },
   "M13": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-13T22:00Z"
   },
   "M14": {
    "score": [
     0,
     1
-   ]
+   ],
+   "date": "2026-06-14T01:00Z"
   },
   "M15": {
    "score": [
     3,
     0
-   ]
+   ],
+   "date": "2026-06-20T00:30Z"
   },
   "M16": {
    "score": [
     0,
     1
-   ]
+   ],
+   "date": "2026-06-19T22:00Z"
   },
   "M17": {
    "score": [
     0,
     3
-   ]
+   ],
+   "date": "2026-06-24T22:00Z"
   },
   "M18": {
    "score": [
     4,
     2
-   ]
+   ],
+   "date": "2026-06-24T22:00Z"
   },
   "M19": {
    "score": [
     4,
     1
-   ]
+   ],
+   "date": "2026-06-13T01:00Z"
   },
   "M20": {
    "score": [
     2,
     0
-   ]
+   ],
+   "date": "2026-06-14T04:00Z"
   },
   "M21": {
    "score": [
     2,
     0
-   ]
+   ],
+   "date": "2026-06-19T19:00Z"
   },
   "M22": {
    "score": [
     0,
     1
-   ]
+   ],
+   "date": "2026-06-20T03:00Z"
   },
   "M25": {
    "score": [
     7,
     1
-   ]
+   ],
+   "date": "2026-06-14T17:00Z"
   },
   "M26": {
    "score": [
     1,
     0
-   ]
+   ],
+   "date": "2026-06-14T23:00Z"
   },
   "M27": {
    "score": [
     2,
     1
-   ]
+   ],
+   "date": "2026-06-20T20:00Z"
   },
   "M28": {
    "score": [
     0,
     0
-   ]
+   ],
+   "date": "2026-06-21T00:00Z"
   },
   "M29": {
    "score": [
     2,
     1
-   ]
+   ],
+   "date": "2026-06-25T20:00Z"
   },
   "M30": {
    "score": [
     0,
     2
-   ]
+   ],
+   "date": "2026-06-25T20:00Z"
   },
   "M31": {
    "score": [
     2,
     2
-   ]
+   ],
+   "date": "2026-06-14T20:00Z"
   },
   "M32": {
    "score": [
     5,
     1
-   ]
+   ],
+   "date": "2026-06-15T02:00Z"
   },
   "M33": {
    "score": [
     5,
     1
-   ]
+   ],
+   "date": "2026-06-20T17:00Z"
   },
   "M34": {
    "score": [
     0,
     4
-   ]
+   ],
+   "date": "2026-06-21T04:00Z"
   },
   "M35": {
    "score": [
     1,
     3
-   ]
+   ],
+   "date": "2026-06-25T23:00Z"
   },
   "M36": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-25T23:00Z"
   },
   "M37": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-15T19:00Z"
   },
   "M38": {
    "score": [
     2,
     2
-   ]
+   ],
+   "date": "2026-06-16T01:00Z"
   },
   "M39": {
    "score": [
     0,
     0
-   ]
+   ],
+   "date": "2026-06-21T19:00Z"
   },
   "M40": {
    "score": [
     1,
     3
-   ]
+   ],
+   "date": "2026-06-22T01:00Z"
   },
   "M43": {
    "score": [
     0,
     0
-   ]
+   ],
+   "date": "2026-06-15T16:00Z"
   },
   "M44": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-15T22:00Z"
   },
   "M45": {
    "score": [
     4,
     0
-   ]
+   ],
+   "date": "2026-06-21T16:00Z"
   },
   "M46": {
    "score": [
     2,
     2
-   ]
+   ],
+   "date": "2026-06-21T22:00Z"
   },
   "M49": {
    "score": [
     3,
     1
-   ]
+   ],
+   "date": "2026-06-16T19:00Z"
   },
   "M50": {
    "score": [
     1,
     4
-   ]
+   ],
+   "date": "2026-06-16T22:00Z"
   },
   "M51": {
    "score": [
     3,
     0
-   ]
+   ],
+   "date": "2026-06-22T21:00Z"
   },
   "M52": {
    "score": [
     3,
     2
-   ]
+   ],
+   "date": "2026-06-23T00:00Z"
   },
   "M55": {
    "score": [
     3,
     0
-   ]
+   ],
+   "date": "2026-06-17T01:00Z"
   },
   "M56": {
    "score": [
     3,
     1
-   ]
+   ],
+   "date": "2026-06-17T04:00Z"
   },
   "M57": {
    "score": [
     2,
     0
-   ]
+   ],
+   "date": "2026-06-22T17:00Z"
   },
   "M58": {
    "score": [
     1,
     2
-   ]
+   ],
+   "date": "2026-06-23T03:00Z"
   },
   "M61": {
    "score": [
     1,
     1
-   ]
+   ],
+   "date": "2026-06-17T17:00Z"
   },
   "M62": {
    "score": [
     1,
     3
-   ]
+   ],
+   "date": "2026-06-18T02:00Z"
   },
   "M63": {
    "score": [
     5,
     0
-   ]
+   ],
+   "date": "2026-06-23T17:00Z"
   },
   "M64": {
    "score": [
     1,
     0
-   ]
+   ],
+   "date": "2026-06-24T02:00Z"
   },
   "M67": {
    "score": [
     4,
     2
-   ]
+   ],
+   "date": "2026-06-17T20:00Z"
   },
   "M68": {
    "score": [
     1,
     0
-   ]
+   ],
+   "date": "2026-06-17T23:00Z"
   },
   "M69": {
    "score": [
     0,
     0
-   ]
+   ],
+   "date": "2026-06-23T20:00Z"
   },
   "M70": {
    "score": [
     0,
     1
-   ]
+   ],
+   "date": "2026-06-23T23:00Z"
   }
  },
  "overrides": {

@@ -113,6 +113,7 @@ async function collectFinals() {
         pair: sides.map((s) => s.code),
         goals,
         pens,
+        date: ev.date,
       });
     }
   }
@@ -122,6 +123,7 @@ async function collectFinals() {
 function entryFor(home, away, f) {
   const e = { score: [f.goals[home], f.goals[away]] };
   if (f.pens) e.pens = [f.pens[home], f.pens[away]];
+  if (f.date) e.date = f.date;
   return e;
 }
 

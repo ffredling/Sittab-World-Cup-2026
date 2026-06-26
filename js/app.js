@@ -79,13 +79,17 @@ export function statusLine(tournament, results) {
   return `${entered} of ${total} matches played`;
 }
 
-// All played matches as compact score cards, newest first (match codes
-// follow the official schedule order). `actual` resolves knockout slots
-// and winners.
+// All played matches as compact score cards, newest first by kickoff time
+// (falling back to match-code order when a date is absent). `actual`
+// resolves knockout slots and winners.
 export function renderPlayedMatches(tournament, results, teams, actual) {
   const played = tournament.matches
     .filter((m) => results.matches[m.code] && results.matches[m.code].score)
-    .sort((a, b) => Number(b.code.slice(1)) - Number(a.code.slice(1)));
+    .sort((a, b) => {
+      const da = results.matches[a.code].date || "";
+      const db = results.matches[b.code].date || "";
+      return db.localeCompare(da) || Number(b.code.slice(1)) - Number(a.code.slice(1));
+    });
   if (!played.length) {
     return `<p class="note">No matches played yet.</p>`;
   }
